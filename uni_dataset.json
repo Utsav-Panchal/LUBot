@@ -1,0 +1,550 @@
+{
+      "intents": [
+            {
+                  "intent": "Greeting",
+                  "text": [
+                        "Hi",
+                        "Hi there",
+                        "Hola",
+                        "Hello",
+                        "Hello there",
+                        "Hya",
+                        "Hya there",
+                        "helloz",
+                        "heyy",
+                        "heyyyyyy",
+                        "Is anyone there?",
+                        "Good day",
+                        "Whats up",
+                        "hey"
+                  ],
+                  "responses": [
+                        "Hello! how are doing today?",
+                        "Good to see you again!",
+                        "Hi there, how can I help?"
+                  ],
+                  "extension":  {
+                        "function": "",
+                        "entities": false,
+                        "responses": []
+                  },
+                  "context":  {
+                        "in": "",
+                        "out": "GreetingUserRequest",
+                        "clear": false
+                  },
+                  "entityType": "NA",
+                  "entities": []
+            },
+            {
+                  "intent": "doing",
+                  "text": [
+                        "how are you",
+                        "how are you doing"
+                  ],
+                  "responses": [
+                        "I'm great, how can i help you?",
+                        "I am doing just fine. Please ask me some question."
+                  ],
+                  "extension":  {
+                        "function": "",
+                        "entities": false,
+                        "responses": []
+                  },
+                  "context":  {
+                        "in": "",
+                        "out": "GreetingUserRequest",
+                        "clear": false
+                  },
+                  "entityType": "NA",
+                  "entities": []
+            },
+            {
+                  "intent": "goodbye",
+                  "text": [
+                        "bye",
+                        "cya",
+                        "See you later",
+                        "Goodbye",
+                        "Good bye",
+                        "I am leaving",
+                        "Have a Good day",
+                        "peace"
+                  ],
+                  "responses": [
+                        "have a good one",
+                        "Talk to you later!",
+                        "Goodbye!"
+                  ],
+                  "extension":  {
+                        "function": "",
+                        "entities": false,
+                        "responses": []
+                  },
+                  "context":  {
+                        "in": "",
+                        "out": "",
+                        "clear": true
+                  },
+                  "entityType": "NA",
+                  "entities": []
+            },
+            {
+                  "intent": "TimeQuery",
+                  "text": [
+                        "What is the time?",
+                        "What's the time?",
+                        "Do you know what time it is?",
+                        "Do you know the time?",
+                        "Can you tell me the time?",
+                        "Tell me what time it is?",
+                        "Time"
+                  ],
+                  "responses": [
+                        "One moment",
+                        "One sec",
+                        "One second"
+                  ],
+                  "extension":  {
+                        "function": "extensions.gTime.getTime",
+                        "entities": false,
+                        "responses": [
+                              "The time is %%TIME%%",
+                              "Right now it is %%TIME%%",
+                              "It is around %%TIME%%"
+                        ]
+                  },
+                  "context":  {
+                        "in": "",
+                        "out": "",
+                        "clear": false
+                  },
+                  "entityType": "NA",
+                  "entities": []
+            },
+            {
+                  "intent": "Thanks",
+                  "text": [
+                        "OK thank you",
+                        "OK thanks",
+                        "OK",
+                        "Thanks",
+                        "Thank you",
+                        "That's helpful"
+                  ],
+                  "responses": [
+                        "No problem!",
+                        "Happy to help!",
+                        "Any time!",
+                        "My pleasure"
+                  ],
+                  "extension":  {
+                        "function": "",
+                        "entities": false,
+                        "responses": []
+                  },
+                  "context":  {
+                        "in": "",
+                        "out": "",
+                        "clear": false
+                  },
+                  "entityType": "NA",
+                  "entities": []
+            },
+            {
+                  "intent": "name",
+                  "text": [
+                        "what is your name",
+                        "what should I call you",
+                        "whats your name?"
+                  ],
+                  "responses": [
+                        "You can call me Lakehead University Virtual Assistant.",
+                        "I'm LUBot!",
+                        "The name's Bot. LUBot."
+                  ],
+                  "extension":  {
+                        "function": "",
+                        "entities": false,
+                        "responses": []
+                  },
+                  "context":  {
+                        "in": "",
+                        "out": "",
+                        "clear": true
+                  },
+                  "entityType": "NA",
+                  "entities": []
+            },
+            {
+                  "intent": "job",
+                  "text": [
+                        "what do you do",
+                        "what can i ask you",
+                        "what can you answer",
+                        "what do you know",
+                        "about what can i ask you",
+                        "Is there anything I can ask you?",
+                        "what questions do you take?",
+                        "what questions can I ask you?",
+                        "Can I ask you any questions?"
+                  ],
+                  "responses": [
+                        "I can answer Lakehead University related questions relavant to admission, registration, and work study."
+                  ],
+                  "extension":  {
+                        "function": "",
+                        "entities": false,
+                        "responses": []
+                  },
+                  "context":  {
+                        "in": "",
+                        "out": "",
+                        "clear": true
+                  },
+                  "entityType": "NA",
+                  "entities": []
+            },
+            {
+                  "intent": "university contact",
+                  "text": [
+                        "How can I get a contact for admission?",
+                        "Can I get a contact for admission?",
+                        "Can you share a contact for admission?",
+                        "admission contact",
+                        "contact to university",
+                        "How can I contact for admission?"
+                  ],
+                  "responses": [
+                        "Admission office contact: <a href='https://www.lakeheadu.ca/about/contact-us' target='_blank'>link</a>.", "Please contact from following details:\nPhone: (807) 343-8110\nFax: (807) 343-8023\nFor more information please visit https://www.lakeheadu.ca/about/contact-us."
+                  ],
+                  "extension":  {
+                        "function": "",
+                        "entities": false,
+                        "responses": []
+                  },
+                  "context":  {
+                        "in": "",
+                        "out": "",
+                        "clear": true
+                  },
+                  "entityType": "NA",
+                  "entities": []
+            },
+            {
+                  "intent": "study permit requirement",
+                  "text": [
+                        "study permit for studying in university",
+		            "permit for admission",
+                        "study permit requirements",
+                        "Is it require to study permit for study?",
+                        "Study Permit" ,
+                        "Do I need a Study Permit?"
+                  ],
+                  "responses": [
+                        "If you’re not a Canadian citizen or permanent resident, and plan to study in Canada for more than six months you will have to apply for a study permit. You should apply for your study permit online as soon as you get your letter of acceptance."
+                  ],
+                  "extension":  {
+                        "function": "",
+                        "entities": false,
+                        "responses": []
+                  },
+                  "context":  {
+                        "in": "",
+                        "out": "",
+                        "clear": true
+                  },
+                  "entityType": "NA",
+                  "entities": []
+            },
+            {
+                  "intent": "student service",
+                  "text": [
+                        "International Student Services",
+                        "Student Services",
+                        "Can I get contact for International Student Services?",
+                        "How do I contact International Student Services?"
+                  ],
+                  "responses": [
+                        "Information you can found <a href='https://www.lakeheadu.ca/international/current/centre' target='_blank'>link</a>."
+                  ],
+                  "extension":  {
+                        "function": "",
+                        "entities": false,
+                        "responses": []
+                  },
+                  "context":  {
+                        "in": "",
+                        "out": "",
+                        "clear": true
+                  },
+                  "entityType": "NA",
+                  "entities": []
+            },
+            {
+                  "intent": "program list",
+                  "text": [
+                        "university programs",
+                        "courses offered by university",
+                        "university offering courses",
+                        "which courses are offered by university?",
+                        "program for study",
+                        "how many departments are there for study?",
+                        "undergraduate program list",
+                        "graduate program list",
+                        "What support programs and services are available?"
+                  ],
+                  "responses": [
+                        "For a complete list of the academic, support programs and services, please refer to The International Student Guidebook.",
+                        "Please visit <a href='https://www.lakeheadu.ca/programs/departments'target='_blank'>link</a> for more information.",
+                        "We are providing various courses for graduate and undergraduate studies. Please visit <a href='https://www.lakeheadu.ca/programs/departments' target='_blank'>link</a>."
+                  ],
+                  "extension":  {
+                        "function": "",
+                        "entities": false,
+                        "responses": []
+                  },
+                  "context":  {
+                        "in": "",
+                        "out": "",
+                        "clear": true
+                  },
+                  "entityType": "NA",
+                  "entities": []
+            },
+            {
+                  "intent": "official documents",
+                  "text": [
+                        "official documents failure",
+                        "unable to submit official documents",
+                        "How would I proceed if I was unable to provide formal documents?",
+                        "If I am unable to produce official documentation, what should I do?",
+                        "What would happen if I am unable to provide official documents?",
+                        "What if I am not able to submit official documents?"
+                  ],
+                  "responses": [
+                        "Whenever possible, we expect students will submit official documents in support of their application. However, if you are unable to submit official documents due to extenuating or exceptional circumstances (such as COVID-19 related school closures) we will consider unofficial documents. For more information, please review our guidelines on unofficial documents.",
+                        "We will consider unofficial documents in case of unexpected situations such as covid19."
+                  ],
+                  "extension":  {
+                        "function": "",
+                        "entities": false,
+                        "responses": []
+                  },
+                  "context":  {
+                        "in": "",
+                        "out": "",
+                        "clear": true
+                  },
+                  "entityType": "NA",
+                  "entities": []
+            },
+            {
+                  "intent": "apply study permit",
+                  "text": [
+                        "why need a study permit?",
+                        "when to have study permit?",
+                        "study permit application",
+                        "apply for study permit",
+                        "How do I apply for a Study Permit?"
+                  ],
+                  "responses": [
+                        "Please visit the Lakehead University’s International Centre website at <a href='https://www.lakeheadu.ca/international/newly-accepted/immigration' target='_blank'>link</a>."
+                  ],
+                  "extension":  {
+                        "function": "",
+                        "entities": false,
+                        "responses": []
+                  },
+                  "context":  {
+                        "in": "",
+                        "out": "",
+                        "clear": true
+                  },
+                  "entityType": "NA",
+                  "entities": []
+            },
+            {
+                  "intent": "admission steps",
+                  "text": [
+                        "admission steps",
+                        "admission applying steps",
+                        "steps for applying for admission",
+                        "What comes when I submit an application to Lakehead University?",
+                        "What should I do after submitting an application to Lakehead University?",
+                        "What happens next once I apply to Lakehead University?",
+                        "After I apply to Lakehead University's, what are my next steps?"
+                  ],
+                  "responses": [
+                        "Information about your next steps can be found here: <a href='https://www.lakeheadu.ca/international/applying/enrolling' target='_blank'>link</a>.",
+                        "Please visit <a href='https://www.lakeheadu.ca/international/applying/enrolling' target='_blank'>link</a> for more information about admission."
+                  ],
+                  "extension":  {
+                        "function": "",
+                        "entities": false,
+                        "responses": []
+                  },
+                  "context":  {
+                        "in": "",
+                        "out": "",
+                        "clear": true
+                  },
+                  "entityType": "NA",
+                  "entities": []
+            },
+            {
+                  "intent": "admission english proficient requirements",
+                  "text": [
+                        "What is the language requirement for admission?",
+                        "English language for admission",
+                        "language requirements",
+                        "English requirements",
+                        "How do I know if I need to submit an English language proficiency test?",
+                        "How can I tell if I have to take an English language test?"
+                  ],
+                  "responses": [
+                        "If you need to submit an English language test, we will include this item on your To-Do List. Visit here: <a href='https://www.lakeheadu.ca/studentcentral/applying/english-language-proficiency-requirements'>link</a> to determine if you will be required to write an English language proficiency test and to confirm the language tests and scores that we accept for admission.",
+                        "Please visit here to get more information about it. <a href='https://www.lakeheadu.ca/studentcentral/applying/english-language-proficiency-requirements'>link</a>",
+                        "Minimum requirements for graduate student is 7 band of IELTS. Please visit <a href='https://www.lakeheadu.ca/studentcentral/applying/english-language-proficiency-requirements'>link</a> for more information."
+                  ],
+                  "extension":  {
+                        "function": "",
+                        "entities": false,
+                        "responses": []
+                  },
+                  "context":  {
+                        "in": "",
+                        "out": "",
+                        "clear": true
+                  },
+                  "entityType": "NA",
+                  "entities": []
+            },
+            {
+                  "intent": "admission applying ouac",
+                  "text": [
+                        "How can I tell what kind of applicant I am at OUAC if I'm applying via OUAC?",
+                        "I'm applying through OUAC; how can I figure out what kind of applicant I am there?",
+                        "How can I figure out what kind of applicant I am at OUAC if I'm applying through OUAC?",
+                        "OUAC",
+                        "applying through OUAC",
+                        "apply via OUAC",
+                        "I'm applying via OUAC, how do I determine what kind of applicant I am at OUAC?"
+                  ],
+                  "responses": [
+                        "You will either be a 101 applicant or a 105 applicant. OUAC has tools on their website to help you confirm which kind of applicant you are.  As an applicant to Lakehead University’s, we also want you to remember our additional admission pathways that you may be eligible for- the First Generation Admission Pathway and the Indigenous Admission Pathway."
+                  ],
+                  "extension":  {
+                        "function": "",
+                        "entities": false,
+                        "responses": []
+                  },
+                  "context":  {
+                        "in": "",
+                        "out": "",
+                        "clear": true
+                  },
+                  "entityType": "NA",
+                  "entities": []
+            },
+            {
+                  "intent": "admission apply",
+                  "text": [
+                        "apply for admission",
+                        "how to apply for admission?",
+                        "admission apply",
+                        "where do I apply?",
+                        "How to apply for admission to Lakehead University?",
+                        "How to apply for admission for program?",
+                        "How to apply for admission?",
+                        "Where to apply?",
+                        "where to apply application for admission?"
+                  ],
+                  "responses": [
+                        "Everything you need to know about applying to Lakehead’s can be found here: <a href='https://www.lakeheadu.ca/studentcentral/applying' target='_blank'>link</a>.",
+                        "Please visit website to know more about applying application: <a href='https://www.lakeheadu.ca/studentcentral/applying' target='_blank'>link</a>",
+                        "Please visit <a href='https://www.lakeheadu.ca/studentcentral/applying' target='_blank'>link</a> to know more about applying.",
+                        "Please visit: <a href='https://www.lakeheadu.ca/international/applying/enrolling' target='_blank'>link</a> for more information."
+                  ],
+                  "extension":  {
+                        "function": "",
+                        "entities": false,
+                        "responses": []
+                  },
+                  "context":  {
+                        "in": "",
+                        "out": "",
+                        "clear": true
+                  },
+                  "entityType": "NA",
+                  "entities": []
+            },
+            {
+                  "intent": "admission application requirements",
+                  "text": [
+                        "admission criteria",
+                        "What criteria are there for both undergraduate and graduate entrance to Lakehead University?",
+                        "admission qualification",
+                        "What qualifications must you meet to get admitted to the graduate and undergraduate programmes at Lakehead University?",
+                        "What are the requirements for entry into the undergraduate and graduate programmes at Lakehead University?",
+                        "requirements for undergraduate program",
+                        "requirements for graduate program",
+                        "requirements for program",
+                        "admission requirements",
+                        "What are the admission requirements for Lakehead university's undergraduate and graduate programs?"
+                  ],
+                  "responses": [
+                        "Please visit <a href='https://www.lakeheadu.ca/studentcentral/applying/general-admission-requirements' target='_blank'>link</a> to confirm the admission requirements for the program(s) you are interested in applying to, depending on the curriculum that you are studying.",
+                        "Please visit to know about requirement for admission: <a href='https://www.lakeheadu.ca/studentcentral/applying/general-admission-requirements' target='_blank'>link</a>",
+                        "As various programs required different criteria for admission please visit <a href='https://www.lakeheadu.ca/studentcentral/applying/general-admission-requirements' target='_blank'>link</a>   to know more about admission requirements."
+                  ],
+                  "extension":  {
+                        "function": "",
+                        "entities": false,
+                        "responses": []
+                  },
+                  "context":  {
+                        "in": "",
+                        "out": "",
+                        "clear": true
+                  },
+                  "entityType": "NA",
+                  "entities": []
+            },
+            {
+                  "intent": "admission application deadline",
+                  "text": [
+                        "Are there important deadlines?",
+                        "Are there important deadlines that I need to remember?",
+                        "When and where do applications begin?",
+                        "When do applications become available?",
+                        "when do applications open?",
+                        "Undergraduate application deadline",
+                        "Graduate application deadline",
+                        "student application deadline",
+                        "admission timelines",
+                        "admission date",
+                        "graduate application date",
+                        "Application deadlines",
+                        "When will the application open?"
+                  ],
+                  "responses": [
+                        "Lakehead University is offering 3 intakes. Everything you need to know about applying to Lakehead can be found here: <a href='https://www.lakeheadu.ca/studentcentral/applying/application-deadlines' target='_blank'>link</a>.",
+                        "You can find more information about application deadline here: <a href='https://www.lakeheadu.ca/studentcentral/applying/application-deadlines' target='_blank'>link</a>.",
+                        "Each intake and department has different application deadlines. Please visit <a href='https://www.lakeheadu.ca/studentcentral/applying/application-deadlines' target='_blank'>link</a> to know more about."
+                  ],
+                  "extension":  {
+                        "function": "",
+                        "entities": false,
+                        "responses": []
+                  },
+                  "context":  {
+                        "in": "",
+                        "out": "",
+                        "clear": true
+                  },
+                  "entityType": "NA",
+                  "entities": []
+            }
+      ]
+}
