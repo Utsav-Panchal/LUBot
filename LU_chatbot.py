@@ -87,7 +87,7 @@ target_tensor, target_index_word = create_categorical_target(targets)
 """Building the Model"""
 
 # Hyper-parameters
-epochs = 50
+epochs = 500
 vocab_size = len(tokenizer.word_index) + 1
 embed_dim = 512
 units = 128

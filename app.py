@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request, jsonify
 # from flask_cors import CORS
 
-from chatbot_genisys import response
+from LU_chatbot import response
 
 
 app = Flask(__name__, template_folder="templates")
